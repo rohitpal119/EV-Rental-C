@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book EV - VoltRide</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Volt<span>Ride</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#vehicles">Vehicles</a>
+        <a href="index.html#how">How It Works</a>
+    </nav>
+</header>
+
+
+<section class="booking-section">
+
+    <div class="booking-container">
+
+        <p class="tagline">BOOK YOUR RIDE</p>
+
+        <h1>Reserve Your EV</h1>
+
+        <p class="booking-subtitle">
+            Enter your details and rental information.
+        </p>
+
+        <form id="bookingForm">
+
+            <label>Selected EV</label>
+
+            <input
+                type="text"
+                id="vehicle"
+                readonly
+            >
+
+
+            <label>Full Name</label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label>Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+                required
+            >
+
+
+            <label>Number of Rental Days</label>
+
+            <input
+                type="number"
+                id="days"
+                min="1"
+                placeholder="Enter number of days"
+                required
+            >
+
+
+            <div class="price-box">
+
+                <span>Total Amount</span>
+
+                <strong id="total">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <button type="submit">
+                Confirm Booking
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<script src="booking.js"></script>
+
+</body>
+</html>

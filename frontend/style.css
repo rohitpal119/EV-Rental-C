@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f6;
+    color: #17201c;
+}
+
+header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: white;
+    border-bottom: 1px solid #e5e8e6;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span,
+.hero h1 span {
+    color: #1b8f55;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #39443e;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #1b8f55;
+}
+
+.login-btn {
+    border: 1px solid #1b8f55;
+    background: white;
+    color: #1b8f55;
+    padding: 10px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 550px;
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e9f3ed;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline {
+    color: #1b8f55;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero-content > p:not(.tagline) {
+    color: #64706a;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background: #1b8f55;
+    color: white;
+}
+
+.secondary-btn {
+    color: #1b8f55;
+    background: white;
+}
+
+.hero-card {
+    width: 330px;
+    padding: 45px 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.car-icon {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #68736d;
+    line-height: 1.6;
+}
+
+.vehicles-section {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 35px;
+}
+
+.section-heading h2,
+.how-section h2 {
+    font-size: 38px;
+}
+
+#search {
+    width: 250px;
+    padding: 13px 18px;
+    border: 1px solid #d6ddd9;
+    border-radius: 8px;
+    outline: none;
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.vehicle-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e4e8e5;
+}
+
+.vehicle-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf4ef;
+    font-size: 75px;
+}
+
+.vehicle-info {
+    padding: 22px;
+}
+
+.vehicle-type {
+    font-size: 10px;
+    font-weight: bold;
+    color: #1b8f55;
+}
+
+.vehicle-info h3 {
+    margin: 10px 0;
+}
+
+.vehicle-info p {
+    color: #737d77;
+    font-size: 13px;
+}
+
+.vehicle-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.vehicle-bottom strong {
+    font-size: 17px;
+}
+
+.vehicle-bottom small {
+    color: #777;
+    font-weight: normal;
+}
+
+.vehicle-bottom button {
+    background: #17201c;
+    color: white;
+    border: none;
+    padding: 9px 13px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.how-section {
+    padding: 80px 8%;
+    background: white;
+    text-align: center;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 45px;
+}
+
+.step {
+    padding: 25px;
+}
+
+.step span {
+    color: #1b8f55;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.step h3 {
+    margin: 15px 0 10px;
+}
+
+.step p {
+    color: #707a74;
+    line-height: 1.6;
+}
+
+footer {
+    background: #17201c;
+    color: white;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+footer p {
+    color: #aab4ae;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .vehicle-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .vehicle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    #search {
+        width: 100%;
+    }
+}
+
+.booking-section {
+    min-height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: #e9f3ed;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 520px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.booking-container h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.booking-subtitle {
+    color: #737d77;
+    margin-bottom: 30px;
+}
+
+#bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#bookingForm label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#bookingForm input {
+    padding: 13px;
+    border: 1px solid #d6ddd9;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+#bookingForm input:focus {
+    border-color: #1b8f55;
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 15px;
+    padding: 18px;
+    background: #edf4ef;
+    border-radius: 8px;
+}
+
+.price-box strong {
+    color: #1b8f55;
+    font-size: 22px;
+}
+
+#bookingForm button {
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #1b8f55;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}

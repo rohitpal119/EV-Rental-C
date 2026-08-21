@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoltRide - EV Rental</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Volt<span>Ride</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#how">How It Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="login-btn">Login</button>
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="tagline">SMART • CLEAN • ELECTRIC</p>
+
+        <h1>Rent Your<br><span>Electric Future.</span></h1>
+
+        <p>
+            Experience premium electric vehicles with
+            flexible rentals and transparent pricing.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#vehicles" class="primary-btn">Explore EVs</a>
+            <a href="#how" class="secondary-btn">How It Works →</a>
+        </div>
+
+    </div>
+
+    <div class="hero-card">
+
+        <div class="car-icon">⚡</div>
+
+        <h3>Drive Electric</h3>
+
+        <p>
+            Zero emissions. Smooth performance.
+            A smarter way to travel.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="vehicles-section" id="vehicles">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="tagline">OUR FLEET</p>
+            <h2>Choose Your EV</h2>
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search EV..."
+        >
+
+    </div>
+
+
+    <div class="vehicle-grid" id="vehicleGrid">
+
+        <div class="vehicle-card">
+
+            <div class="vehicle-image">🚙</div>
+
+            <div class="vehicle-info">
+
+                <span class="vehicle-type">SUV</span>
+
+                <h3>Tata Nexon EV</h3>
+
+                <p>⚡ 325 km range</p>
+
+                <div class="vehicle-bottom">
+
+                    <strong>₹1,200 <small>/ day</small></strong>
+
+                    <button onclick="window.location.href='booking.html?vehicle=Tata%20Nexon%20EV&price=1200'">
+    Rent Now
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="vehicle-card">
+
+            <div class="vehicle-image">🚗</div>
+
+            <div class="vehicle-info">
+
+                <span class="vehicle-type">HATCHBACK</span>
+
+                <h3>MG Comet EV</h3>
+
+                <p>⚡ 230 km range</p>
+
+                <div class="vehicle-bottom">
+
+                    <strong>₹900 <small>/ day</small></strong>
+
+                    <button onclick="window.location.href='booking.html?vehicle=Tata%20Nexon%20EV&price=1200'">
+    Rent Now
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="vehicle-card">
+
+            <div class="vehicle-image">🚘</div>
+
+            <div class="vehicle-info">
+
+                <span class="vehicle-type">HATCHBACK</span>
+
+                <h3>Tata Tiago EV</h3>
+
+                <p>⚡ 250 km range</p>
+
+                <div class="vehicle-bottom">
+
+                    <strong>₹800 <small>/ day</small></strong>
+
+                    <button onclick="window.location.href='booking.html?vehicle=Tata%20Nexon%20EV&price=1200'">
+    Rent Now
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="vehicle-card">
+
+            <div class="vehicle-image">🚙</div>
+
+            <div class="vehicle-info">
+
+                <span class="vehicle-type">SUV</span>
+
+                <h3>MG ZS EV</h3>
+
+                <p>⚡ 461 km range</p>
+
+                <div class="vehicle-bottom">
+
+                    <strong>₹1,500 <small>/ day</small></strong>
+
+                    <button onclick="window.location.href='booking.html?vehicle=Tata%20Nexon%20EV&price=1200'">
+    Rent Now
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="how-section" id="how">
+
+    <p class="tagline">SIMPLE PROCESS</p>
+
+    <h2>How It Works</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <span>01</span>
+            <h3>Choose an EV</h3>
+            <p>Browse our electric fleet and find your perfect vehicle.</p>
+        </div>
+
+        <div class="step">
+            <span>02</span>
+            <h3>Book Your Ride</h3>
+            <p>Select your rental duration and confirm your booking.</p>
+        </div>
+
+        <div class="step">
+            <span>03</span>
+            <h3>Drive & Enjoy</h3>
+            <p>Pick up your EV and enjoy a clean, comfortable ride.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer id="contact">
+
+    <div class="logo">Volt<span>Ride</span></div>
+
+    <p>Smart electric mobility made simple.</p>
+
+    <p>© 2026 VoltRide EV Rentals</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
